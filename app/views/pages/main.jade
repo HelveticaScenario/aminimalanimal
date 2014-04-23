@@ -1,0 +1,59 @@
+extends ../index.jade
+
+prepend head
+	title #{partner_name} Card Registration: Verify Your Information
+	meta(name="description", content="[Partner Name] Card Registration: Verify Your Information")
+	meta(name="keywords", content="[Partner Name], Card Registration, verify")
+
+block page-h1
+	h1 Credit Card Registration
+	h2.visuallyhidden Step 1 of 4, verify.
+
+block upper-righthand-links
+	a(href="#") Español
+	a(aria-label="Sign in to account.", href="#", title="Sign in to account.") Sign In
+	include ../links/link-exit
+	
+block breadcrumbs
+	ul.verify(aria-hidden="true")
+		include ../breadcrumbs.jade
+
+block main-content
+	main.main_verify(role="main")
+		a(name="main", tabindex="-1")
+
+		.left_column
+			.error_page_level.hidden
+				span.error_alert_icon
+				span.error The information you entered does not match our records. Please re-enter your information in the fields below. For your protection, we cannot specify which field is incorrect.
+			.error_page_level.hidden
+				span.error_alert_icon
+				span.error Your session has timed out for your protection. Your browser may also limit secure connection time, and automatically log you out independently of our timeout procedure. Please re-enter your information.
+
+			h2 Verify Your Information
+			p Please have your card available to activate it (if required) and/or register for online account management. All fields are required unless otherwise noted.
+			p Need Help? <a class="calls_modal" data-opens="#modal_contact_us" href="#">Contact Us.</a>
+		form#form_verify(action="./2.1-Profile-Email-and-Mobile-Not-on-File.html", autocomplete="off", method="post")
+			.left_column.input_column
+			
+				.field
+					include ../fields/field-1-card-number
+						
+			
+				.field
+					include ../fields/field-2-name-on-card
+				
+			
+				.field
+					include ../fields/field-3-last-3-digits-on-signature-panel
+
+			
+				.field
+					include ../fields/field-4-last-4-digits-of-social-security-number
+
+			.separator
+				input.button(aria-label="Click to verify information and proceed to next step.", tabindex="0", title="Click to verify information and proceed to next step.", type="submit", value="Verify")
+
+block modals
+	//- include ../modals/modal-contact-us
+	include ../modals/modal-exit

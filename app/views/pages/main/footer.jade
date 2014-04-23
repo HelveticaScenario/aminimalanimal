@@ -1,0 +1,29 @@
+//
+	 <script src="script-ck.js"></script> 
+//
+	 for test purposes. For production, swap the scripts. 
+script(src='js/main-ck.js?201307071253')
+script(src='js/coffee.js?201306031900')
+//
+	 Passes optional callbacks to load slabtext when typekit checks in. 
+script(type='text/javascript')
+	try {
+	Typekit.load({
+	active: function() {
+	try {
+	$('#skillslab').slabText();
+	} catch(e) {
+	console.log('For some reason, slabText wasn\'t called');
+	}
+	},
+	inactive: function() {
+	try {
+	$('#skillslab').slabText();
+	} catch(e) {
+	console.log('For some reason, slabText wasn\'t called');
+	}
+	}
+	});
+	} catch(e) {
+	console.log('Seems that typekit.load didn\'t work...');
+	}
