@@ -8,7 +8,9 @@ var gulp = require('gulp'),
 
 gulp.task('stylus', function () {
 	return gulp.src('./views/stylesheets/**/*.styl')
-		.pipe(stylus())
+		.pipe(stylus({
+			errors: true
+		}))
 		.pipe(gulp.dest('./public/stylesheets'));
 });
 
