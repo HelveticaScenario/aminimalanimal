@@ -1,0 +1,36 @@
+article.project
+	.group_front
+		img(src='images/portfolio/dice-bag---aminimalanimal---default-roller.png', alt='The default interface for an online random dice generator for tabletop role-playing games like D&amp;D, Legend of the Five Rings (L5R), Gurps, or Shadowrun, shown on a thin or mobile device.')
+		img(src='images/portfolio/dice-bag---aminimalanimal---history.png', alt='The history section of an online random dice generator for tabletop role-playing games, shown on a thin or mobile device.')
+		img(src='images/portfolio/dice-bag---aminimalanimal---preferences.png', alt='The preferences interface for an online random dice generator for tabletop role-playing games, shown on a thin or mobile device.')
+		img(src='images/portfolio/dice-bag---aminimalanimal---customized-roller.png', alt='An interface for an online random dice generator, after being customized in Preferences.')
+	aside.group_back
+		header
+			h3 Dice Bag
+			i.icon-CoffeeScript(title='CoffeeScript')
+			i.icon-jQuery(title='jQuery')
+			i.icon-CSS3(title='CSS3')
+			i.icon-Sass(title='Sass')
+			i.icon-compass(title='Compass')
+			i.icon-Illustrator(title='Adobe Illustrator')
+		.content
+			p
+				| I created a random dice generator for really fast calculations while playing tabletop role-playing games. You can
+				a(href='/projects/dice-roller', target='_blank') check it out here
+				| . (Warning: it has not been tested in IE.)
+			p
+				| With this, I started accomplishing a few of my 2013 goals: writing code that scales better, improving my workflow (I used CoffeeScript + a healthy amount of custom SASS mixins), and I got to start making web apps.
+			h4 What's really cool about this:
+			ul
+				li
+					| That's a legitimate HTML form: I'm using radio-buttons and checkboxes, and it looks (and behaves) like this! That's crazy awesome.
+				li
+					| It's entirely CSS3. No images at all—no,
+					strong not even the dice
+					| —
+					strong they're a font
+					| ! I believe I've stumbled upon a completely new technique: css-stylable vector art via layering custom fonts.
+				li It's fluid and responsive, so it'll work on desktop and modern mobile devices.
+				li
+					| It automatically saves your rolls, so they'll remain even if you leave the page and come back.
+				li The Preferences page allows you to alter the interface and set defaults.

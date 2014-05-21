@@ -1,0 +1,205 @@
+p, q, blockquote, h1, h2, h3, h4, h5, h6, ul, li, div, input, textarea
+	font-family: 'futura-pt', futura, sans-serif
+	font-weight: 500
+
+p, q, blockquote, li
+	font-weight: 400
+
+
+html, body
+	height: 100%
+	width: 100%
+
+/* body font-size 62.5 is the rem=px trick */
+body
+	font-size: 62.5%
+	background: backgroundtexture
+
+p, div, blockquote
+	font-size: 12px
+
+h1
+	font-size: 24px
+
+h2
+	font-size: 21px
+
+h3
+	font-size: 18px
+
+h4
+	font-size: 14px
+
+ul, li
+	font-size: 12px
+
+input, textarea
+	font-size: 12px
+
+strong
+	color: fontcolor4
+	font-weight: normal
+
+h1, h2, h3, h4, blockquote, label
+	line-height: 1.5rem
+	margin-top: 5px
+	margin-bottom: 5px
+
+p, li
+	line-height: 1.5rem
+	margin-top: 15px
+	margin-bottom: 15px
+
+p:first-of-type, li:first-of-type
+	margin-top: 0
+
+p:last-child, li:last-child
+	margin-bottom: 0
+
+h1, h2, h3, h4, ul, .slabtext
+	color: fontcolor1
+
+p, q, div, li, blockquote, label, input, textarea
+	color: fontcolor2
+
+a
+	color: fontcolor4
+	text-decoration: none
+	transition: color 0.5s
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+	&:hover
+		color: color6
+	&:active
+		color: darken(fontcolor4, 20%)
+
+//everything with a subtle white text-shadow
+h1, h2, h3, h4, ul, li, span, blockquote, p, label, a
+	text-shadow: 0 1px 0 #FFFFFF
+
+
+input:focus, textarea:focus
+	border-color: fontcolor4
+
+.highlight
+	color: highlightcolor
+
+ul
+	padding-left: 1.25em
+
+
+.container
+	position: relative
+	width: 90%
+	// max-width: 960px
+	margin: 0 auto
+
+
+
+	// BASIC FLUID POSITIONING SYSTEM
+	// borrowed and altered from http://www.responsivegridsystem.com/
+
+
+section
+	clear: both
+	padding: 0px
+	margin: 0px
+	&:before, &:after
+		content: ""
+		display: table
+	&:after
+		clear: both
+
+section
+	padding: padding 0
+	border-top: sectionborderthickness double tan
+
+.one_of_one, .one_of_two, .one_of_three, .one_of_four
+	display: block
+	float: left
+	margin: 1.5% 0
+	width: 100%
+
+.one_of_two
+	@media (min-width: 45em)
+		width: 48.25%
+		margin: 0 0 1.5% 3.5%
+	&:nth-of-type(2n+1)
+		@media (min-width: 45em)
+			margin-left: 0
+			clear: both
+
+.one_of_three
+	@media (min-width: 75em)
+		width: 31%
+		margin: 0 0 1.5% 3.5%
+	&:nth-of-type(3n+1)
+		@media (min-width: 60em)
+			margin-left: 0
+			clear: both
+
+.one_of_four
+	@media (min-width: 45em) and (max-width: 79.999em)
+		width: 48.25%
+		margin: 0 0 1.5% 3.5%
+	&:nth-of-type(2n+1)
+		@media (min-width: 45em) and (max-width: 79.999em)
+			margin-left: 0
+			clear: both
+	@media (min-width: 80em)
+		width: 22.375%
+		margin: 0 0 1.5% 3.5%
+		clear: none
+	&:nth-of-type(4n+1)
+		@media (min-width: 80em)
+			margin-left: 0
+			clear: both
+
+// Icon colors
+
+.icon-nodejs
+	color: #1fad26
+
+.icon-JavaScript
+	color: #dfce1b
+
+.icon-jQuery
+	color: #78cff5
+
+.icon-coffeescript
+	color: #544729
+
+.icon-WordPress
+	color: #464442
+
+.icon-compass
+	color: #cb1507
+
+.icon-CSS3
+	color: #0270bb
+
+.icon-Sass
+	color: #ce4dd6
+
+.icon-HTML5
+	color: #e44d26
+
+.icon-php
+	color: #5a68a6
+
+.icon-Photoshop
+	color: #266ab4
+
+.icon-Illustrator
+	color: #f07f22
+
+
+
+
+
+
+
+
+
+
+
+

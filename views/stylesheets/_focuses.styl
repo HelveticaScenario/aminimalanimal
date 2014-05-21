@@ -1,0 +1,23 @@
+// focuses
+
+// user experience
+// code smells. Doing manual adjustment of the userexp p tag. don't think there is a better way, though.
+// more code smells! yay. I'm manually moving this down because it's the only section that looks off with the current implementation, and it's cleaner than selecting this section and axing its margin-bottom and selecting the next one and axing its margin-top.
+
+.user_exp
+	position: relative
+	h4
+		text-align: center
+
+.user_exp_left
+	display: block
+	text-align: center
+	@media (min-width: oneoftwobreak)
+		margin-left: -198
+
+
+.user_exp_right
+	display: block
+	text-align: center
+	@media (min-width: oneoftwobreak)
+		margin-left: 148

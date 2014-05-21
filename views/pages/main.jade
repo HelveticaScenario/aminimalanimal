@@ -1,0 +1,21 @@
+extends ../index.jade
+
+prepend head
+	title aminimalanimal
+	style(src='/css/main.css')
+
+block header
+	
+block content
+	include ../pages/main/opener
+	div.container
+		include ../pages/main/skills
+	include ../pages/main/portfolio
+	div.container
+		include ../pages/main/focuses
+		include ../pages/main/goals
+		include ../pages/main/contact
+		include ../pages/main/compliments
+
+block scripts
+	include ../pages/main/scripts

@@ -1,0 +1,39 @@
+//
+    unstoppable spanned text & adding slabtext support
+
+.slabtexted .slabtext
+    display: -moz-inline-box
+    display: inline-block
+    white-space: nowrap
+
+.slabtextinactive .slabtext
+    display: inline
+    white-space: normal
+    font-size: 1em !important
+    letter-spacing: inherit !important
+    word-spacing: inherit !important
+    *letter-spacing: 0 !important
+    *word-spacing: 0 !important
+
+.slabtextdone .slabtext
+    display: block
+
+#unstoppable
+    text-align: center
+    +box-sizing(border-box)
+    padding: $padding 10px
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 25%, rgba(0,0,0,1) 100%)
+    span:first-of-type
+        line-height: 1.1em
+    span:nth-of-type(2)
+        line-height: 1em
+    span:nth-of-type(3)
+        line-height: 1.1em
+    span:nth-of-type(4)
+        line-height: 1.3em
+    span:nth-of-type(5)
+        line-height: 1.7em
+    span:nth-of-type(6)
+        line-height: 1.4em
+    span:nth-of-type(7)
+        line-height: 1.5em
